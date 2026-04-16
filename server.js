@@ -133,4 +133,7 @@ app.get('/cron/daily-question', async (req,res) => {
 })
 
 const PORT = process.env.PORT || 3001
+app.get('/', (req, res) => {
+  res.send('Love Link Backend is running 🚀')
+})
 server.listen(PORT, () => console.log(`🚀 Love Link Phase 3 backend :${PORT} (HTTP + WebSocket)`))
